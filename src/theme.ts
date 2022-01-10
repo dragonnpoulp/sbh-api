@@ -152,7 +152,7 @@ const defaultTheme: ThemeInterface = {
   logo: {
     maxHeight: ({ sidebar }) => sidebar.width,
     maxWidth: ({ sidebar }) => sidebar.width,
-    gutter: '2px',
+    gutter: '16px 32px 8px 16px',
   },
   rightPanel: {
     backgroundColor: '#263238',

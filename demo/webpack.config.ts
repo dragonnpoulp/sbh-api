@@ -14,17 +14,8 @@ function root(filename) {
   return resolve(__dirname + '/' + filename);
 }
 
-export default (env: { playground?: boolean; bench?: boolean } = {}, { mode }) => ({
-  entry: [
-    root('../src/polyfills.ts'),
-    root(
-      env.playground
-        ? 'playground/hmr-playground.tsx'
-        : env.bench
-        ? '../benchmark/index.tsx'
-        : 'index.tsx',
-    ),
-  ],
+export default (_, { mode }) => ({
+  entry: [root('../src/polyfills.ts'), root('index.tsx')],
   target: 'web',
   output: {
     filename: 'redoc-demo.bundle.js',
@@ -113,18 +104,14 @@ export default (env: { playground?: boolean; bench?: boolean } = {}, { mode }) =
     // new webpack.NamedModulesPlugin(),
     // new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebpackPlugin({
-      template: env.playground
-        ? 'demo/playground/index.html'
-        : env.bench
-        ? 'benchmark/index.html'
-        : 'demo/index.html',
+      template: 'demo/index.html',
     }),
     new ForkTsCheckerWebpackPlugin({ logger: { infrastructure: 'silent', issues: 'console' } }),
     webpackIgnore(/js-yaml\/dumper\.js$/),
     webpackIgnore(/json-schema-ref-parser\/lib\/dereference\.js/),
     webpackIgnore(/^\.\/SearchWorker\.worker$/),
     new CopyWebpackPlugin({
-      patterns: ['demo/openapi.yaml'],
+      patterns: ['demo/openapi.yaml', 'demo/sign_request.png'],
     }),
   ],
 });
