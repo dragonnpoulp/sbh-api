@@ -19,7 +19,7 @@ export default (_, { mode }) => ({
   target: 'web',
   output: {
     filename: 'redoc-demo.bundle.js',
-    path: root('dist'),
+    path: root('../docs'),
     globalObject: 'this',
   },
 
