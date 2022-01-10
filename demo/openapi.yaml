@@ -49,7 +49,7 @@ info:
     ### 3. Thêm thông tin chữ ký vào request header
     ```bash
     curl -X POST \
-    https://www.example.com/ams/api/v1/payments/pay \
+    https://www.example.com/v1/notify-ekyc \
     -H 'Content-Type: application/json' \
     -H 'Request-Id: REQUEST_20220110001' \
     -H 'Request-Time: 1641816102370' \
