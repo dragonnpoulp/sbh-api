@@ -53,7 +53,7 @@ info:
     -H 'Content-Type: application/json' \
     -H 'Request-Id: REQUEST_20220110001' \
     -H 'Request-Time: 1641816102370' \
-    -H 'CGLUx3RZFAu7qH/EBz5G/9fTKiB0fycPSctD2xf3/9Ofq3nCY720fQo4YjEl6j87fxhX7WCPIJu+7ENnTCantXJD9/TSmxOGzn/Sg4bnG0WDS4DPJ1vR5PS1BznhWwHMz5VTfMmh93mEaxlEgNJOSm8mPeOvqaBr1fpjNObK7DXJjAqm4CNq2QYS4vZ6PQqVyXoPoQbiKWSqp4PGV1p1/FyZbfHJAXx8zt1Yy32/m2g27d48RG2wmGINUm0HbKCbn/qQF+eyguHp1KxDYmqYa21UXLEm4Oa6z+5cdNqAD82yUh10lP0XxElC8TnfDpNABSuCzVjidqmE8Ist8d81vA==' \
+    -H 'Signature: CGLUx3RZFAu7qH/EBz5G/9fTKiB0fycPSctD2xf3/9Ofq3nCY720fQo4YjEl6j87fxhX7WCPIJu+7ENnTCantXJD9/TSmxOGzn/Sg4bnG0WDS4DPJ1vR5PS1BznhWwHMz5VTfMmh93mEaxlEgNJOSm8mPeOvqaBr1fpjNObK7DXJjAqm4CNq2QYS4vZ6PQqVyXoPoQbiKWSqp4PGV1p1/FyZbfHJAXx8zt1Yy32/m2g27d48RG2wmGINUm0HbKCbn/qQF+eyguHp1KxDYmqYa21UXLEm4Oa6z+5cdNqAD82yUh10lP0XxElC8TnfDpNABSuCzVjidqmE8Ist8d81vA==' \
     -d '{"txid":"1ea682c5-b786-480e-be1d-f0dff0eb5781","status":"success","result":{"fullname":"Nguyễn Văn A","phone":"0973333333","bankAccount":198120046903,"identityNumber":2696338,"email":"seller@example.com"}}'
     ```
 
